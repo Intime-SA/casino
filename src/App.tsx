@@ -560,7 +560,7 @@ function App() {
         </motion.footer>
 
         {/* El PopUpManager se renderiza aquí para estar disponible globalmente */}
-        <PopUpManager children={null} />
+       {/*  <PopUpManager children={null} /> */}
       </div>
     </PopUpProvider>
   );
