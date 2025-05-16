@@ -41,6 +41,7 @@ const LoadingButton: React.FC<LoadingButtonProps> = ({
 
   return (
     <motion.a
+      id="cta-button"
       href={href}
       onClick={handleClick}
       className={`${baseClasses} ${
