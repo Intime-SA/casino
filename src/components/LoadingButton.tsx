@@ -6,6 +6,7 @@ interface LoadingButtonProps {
   href: string;
   className?: string;
   variant?: 'primary' | 'secondary';
+  id?: string;
 }
 
 const LoadingButton: React.FC<LoadingButtonProps> = ({
@@ -13,12 +14,14 @@ const LoadingButton: React.FC<LoadingButtonProps> = ({
   href,
   className,
   variant = 'primary',
+  id,
 }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     setIsLoading(true);
+
     setTimeout(() => {
       window.location.href = href;
       // Reset loading state in case navigation fails or user returns
@@ -41,7 +44,7 @@ const LoadingButton: React.FC<LoadingButtonProps> = ({
 
   return (
     <motion.a
-      id="cta-button"
+      id={id}
       href={href}
       onClick={handleClick}
       className={`${baseClasses} ${

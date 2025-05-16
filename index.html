@@ -1,76 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>Sportsbet - Tu Plataforma de Entretenimiento Digital</title>
+    <meta
+      name="description"
+      content="Explorá Sportsbet, la mejor plataforma de entretenimiento digital. Registrate hoy y obtené beneficios exclusivos. ¡Jugá, participá y ganá!"
+    />
+    <meta
+      name="keywords"
+      content="apuestas, casino, entretenimiento digital, juegos online, sportsbet, bono bienvenida"
+    />
+    <meta name="author" content="Sportsbet" />
 
-  <!-- SEO Meta Tags -->
-  <title>Sportsbet - Tu Plataforma de Entretenimiento Digital</title>
-  <meta name="description" content="Explorá Sportsbet, la mejor plataforma de entretenimiento digital. Registrate hoy y obtené beneficios exclusivos. ¡Jugá, participá y ganá!" />
-  <meta name="keywords" content="apuestas, casino, entretenimiento digital, juegos online, sportsbet, bono bienvenida" />
-  <meta name="author" content="Sportsbet" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/logo.png" />
-  <link rel="apple-touch-icon" href="/logo.png" />
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta
+      property="og:title"
+      content="Sportsbet - Tu Plataforma de Entretenimiento Digital"
+    />
+    <meta
+      property="og:description"
+      content="Registrate hoy en Sportsbet y accedé a bonos exclusivos, desafíos y una experiencia única de entretenimiento online."
+    />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:url" content="https://sportsbet.bet.ar/" />
+    <!-- Replace with your actual domain -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sportsbet" />
+    <meta property="og:locale" content="es_AR" />
 
-  <!-- Open Graph / Facebook Meta Tags -->
-  <meta property="og:title" content="Sportsbet - Tu Plataforma de Entretenimiento Digital" />
-  <meta property="og:description" content="Registrate hoy en Sportsbet y accedé a bonos exclusivos, desafíos y una experiencia única de entretenimiento online." />
-  <meta property="og:image" content="/logo.png" />
-  <meta property="og:url" content="https://sportsbet.bet.ar/" /> <!-- Replace with your actual domain -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Sportsbet" />
-  <meta property="og:locale" content="es_AR" />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sportsbet - Tu Plataforma de Entretenimiento Digital"
+    />
+    <meta
+      name="twitter:description"
+      content="Registrate hoy en Sportsbet y accedé a bonos exclusivos, desafíos y una experiencia única de entretenimiento online."
+    />
+    <meta name="twitter:image" content="/logo.png" />
+    <!-- <meta name="twitter:site" content="@YourTwitterHandle"> -->
+    <!-- Optional: Add Twitter handle -->
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sportsbet - Tu Plataforma de Entretenimiento Digital" />
-  <meta name="twitter:description" content="Registrate hoy en Sportsbet y accedé a bonos exclusivos, desafíos y una experiencia única de entretenimiento online." />
-  <meta name="twitter:image" content="/logo.png" />
-  <!-- <meta name="twitter:site" content="@YourTwitterHandle"> --> <!-- Optional: Add Twitter handle -->
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#212121" />
 
-  <!-- Theme Color -->
-  <meta name="theme-color" content="#212121" />
-
-  <!-- Google Fonts (Existing) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-<!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1823068665215187'); 
-  fbq('track', 'PageView');
-</script>
-
-<!-- End Meta Pixel Code -->
-</head>
-
-<body>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1823068665215187&ev=PageView&noscript=1"
-/></noscript>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
- <script>
-    document.getElementById('cta-button').addEventListener('click', function() {
-      fbq('track', 'Lead', {
-        content_name: 'Botón CTA',
+    <!-- Google Fonts (Existing) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1823068665215187");
+      fbq("track", "PageView");
+      fbq("track", "Lead", {
+        content_name: "Botón CTA",
         value: 0,
-        currency: 'USD'
+        currency: "USD",
       });
-    });
-  </script>
-</body>
+    </script>
 
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1823068665215187&ev=PageView&noscript=1"
+    /></noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById("cta-button");
+        if (button) {
+          console.log("Botón CTA encontrado por script en index.html");
+          button.addEventListener("click", function () {
+            if (typeof window.fbq === 'function') {
+              window.fbq("track", "Lead", {
+                content_name: "Botón CTA (via index.html)",
+                value: 0,
+                currency: "USD",
+              });
+            }
+          });
+        } else {
+          console.log("No se encontró el botón CTA por script en index.html después de DOMContentLoaded");
+        }
+      });
+    </script>
+  </body>
 </html>

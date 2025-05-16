@@ -229,21 +229,24 @@ function App() {
             />
           </motion.div>
           <div className="flex items-center space-x-3 md:space-x-4">
+
             <button
               onClick={() => setShowTerms(true)}
               className="text-white/80 hover:text-brand-green transition-colors duration-200 text-sm md:text-base px-3 py-1 hidden sm:block"
             >
               Bases y Condiciones
+              
             </button>
             
-            <LoadingButton
+            
+{/*             <LoadingButton
               href={REGISTER_URL}
               className="px-4 py-2 text-sm md:text-base hover:text-[white] sm:block hidden" // Smaller button
               variant="primary"
             >
               <FaUserPlus className="text-lg mr-1" />
               R e g i s t r a r s e
-            </LoadingButton>
+            </LoadingButton> */}
           </div>
         </motion.nav>
 
@@ -344,6 +347,7 @@ function App() {
                 </p>
                 <div className="flex flex-col items-center md:items-start gap-4">
                   <LoadingButton
+                    id="cta-button"
                     href={REGISTER_URL}
                     variant="primary"
                     className="shadow-brand-green/40 w-full sm:w-auto"
