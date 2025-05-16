@@ -306,13 +306,13 @@ function App() {
               y descubrí una nueva forma de jugar y ganar.
             </motion.p>
             {/* Optional CTA in Hero */}
-            {/*
+           
             <motion.div variants={fadeInUp}>
-               <LoadingButton href={REGISTER_URL} variant="primary">
+               <LoadingButton id='cta-button' href={REGISTER_URL} variant="primary">
                  ¡Empezar Ahora!
                </LoadingButton>
             </motion.div>
-            */}
+           
           </motion.section>
 
           {/* Banner Section (Rediseñada con Carrusel) */}
